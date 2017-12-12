@@ -1,0 +1,67 @@
+
+
+
+		<!-- Header -->
+			<header id="header" class="alt">
+		      <a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+          <li><a routerLink="/"> Home </a></li>
+          <li><a routerLink="/fish"> Our Fish </a></li>
+          <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="/assets/images/slide01.jpg" alt=""/>
+					<div class="inner">
+						<header>
+							<p></p>
+							<h2>Welcome to ... Aquatic Sales</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/images/slide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>We want to make your experience in aquatics the best.</p>
+							<h2>Excellent Customer Service</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/images/slide03.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Our fish come all over the world.</p>
+							<h2>Experience the world through aquatics.</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/images/slide04.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Specie Highlight </p>
+							<h2>Check out this cool fish.</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="/assets/images/slide05.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+							<h2>Lorem adipiscing</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+      

@@ -1,0 +1,12 @@
+img {
+  margin-top:5%;
+  padding-top:5%;
+  margin:15%;
+  max-width: 75%;
+}
+
+.image .fit{
+  margin-top:10px;
+  display:flex;
+  justify-content: center;
+}
