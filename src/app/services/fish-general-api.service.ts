@@ -48,14 +48,16 @@ export class FishGeneralApiService {
   // GET    /api/phones/:id
   getOneFish(oneId: string) {
       return this.httpThang.get(
-        `${environment.backendUrl}/api/displayfish/${oneId}`
+        `${environment.backendUrl}/api/displayfish/${oneId}`,
+      { withCredentials: true }
       ).toPromise();
   }
 
   // DELETE /api/phones/:id
   deleteOneFish(oneId: string) {
       return this.httpThang.delete(
-        `${environment.backendUrl}/api/displayfish/${oneId}`
+        `${environment.backendUrl}/api/displayfish/${oneId}`,
+        { withCredentials: true }
       ).toPromise();
   }
 }

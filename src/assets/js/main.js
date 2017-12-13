@@ -251,7 +251,7 @@ var settings = {
 			}, options.delay);
 
 	};
-//hieloStart = function(){
+	hieloStart = function(){
 	$(function() {
 
 		var	$window 	= $(window),
@@ -311,5 +311,5 @@ var settings = {
 			}
 
 	});
-//}
+}
 })(jQuery);

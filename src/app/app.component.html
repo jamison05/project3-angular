@@ -1,5 +1,9 @@
 
-<!-- Nav -->
+<header id="header" class="alt">
+    <a href="#menu">Menu</a>
+</header>
+
+
   <nav id="menu">
     <ul class="links">
       <li><a routerLink="/"> Home </a></li>
@@ -9,8 +13,7 @@
   </nav>
 
 
-
-<!-- <header class="initial_header">
+<header class="initial_header">
 
 <div class ="container2_a1">
 <div class = "container1_a1">
@@ -19,19 +22,21 @@
         <a routerLink="/fish"> Our Fish </a>
         <a *ngIf="!userInjectService.currentUser"
             routerLink="/join">Join</a>
-        <button *ngIf="userInjectService.currentUser"
-          (click)="startLogOutAjax()">
-        Log Out
-      </button>
-
+            <p *ngIf="userInjectService.currentUser">
+              Hello, <b>{{ userInjectService.currentUser.username }}</b>.
+            </p>
   </nav>
 
-  <p *ngIf="userInjectService.currentUser">
-    Hello, <b>{{ userInjectService.currentUser.username }}</b>.
-  </p>
+
 
 </div>
 </div>
-</header> -->
+</header>
+
+
 
 <router-outlet></router-outlet>
+<button *ngIf="userInjectService.currentUser"
+  (click)="startLogOutAjax()">
+Log Out
+</button>

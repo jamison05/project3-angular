@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {  FishGeneralApiService , FishItem } from '../services/fish-general-api.service';
-import { ActivatedRouter, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-fish-general',

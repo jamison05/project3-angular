@@ -1,3 +1,65 @@
-<p>
-  fish-details works!
-</p>
+
+
+<h2>This specific fish <h2>
+
+<div class="inner">
+  <div class="grid-style">
+
+    <div>
+      <div class="box">
+
+        <div class="image fit">
+           <img [src]="fishes.images" />
+        </div>
+        <div class="content">
+          <header class="align-center">
+            <ul class = "detail_items">
+              <p> {{ fishes.commonname }} </p>
+              <p> Scientific Name: <i>{{ fishes.sci_name }}</i></p>
+              <p><span class="caption1"> Actual Size:</span>  {{ fishes.currentSize }} inches </p>
+              <p><span class="caption1">(Approximate) Max Size:</span>{{ fishes.maxSize }} inches</p>
+              <p><span class="caption1">Tempermant: </span> {{ fishes.tempermant }}</p>
+              <p><span class="caption1">Water Preference:</span>  {{ fishes.waterpreference }}</p>
+              <p><li *ngFor="let locationFish of fishes.location">
+                <span class="caption1">Naturally Found:</span>{{ locationFish.locations}}
+              </li></p>
+            </ul>
+
+              <button *ngIf="fishes._id"                  (click)="startDeleteAjax()">Delete Fish Item</button>
+              <div></div>
+              <a [routerLink]="['/fish']">Go back to list</a>
+
+          </header>
+        </div>
+      </div>
+    </div>
+
+
+<!--  currentSize: {
+            type: Number,
+            required: [true, 'Add information on fish.']
+        },
+        maxSize: {
+            type: Number,
+            required: [false, '']
+        },
+        tempermant: {
+            type: String,
+            required: [false, '']
+        },
+        waterpreference: {
+            type: String,
+            required: [false, '']
+        },
+        locations: [{
+            type: String,
+            required: [true, 'Where are these fish from?']
+        }],
+
+
+    }
+-->
+
+
+</div>
+</div>
