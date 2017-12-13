@@ -1,3 +1,15 @@
+
+<!-- Nav -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a routerLink="/"> Home </a></li>
+      <li><a routerLink="/fish"> Our Fish </a></li>
+      <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
+    </ul>
+  </nav>
+
+
+
 <!-- <header class="initial_header">
 
 <div class ="container2_a1">
@@ -6,9 +18,7 @@
         <a routerLink="/"> Home </a>
         <a routerLink="/fish"> Our Fish </a>
         <a *ngIf="!userInjectService.currentUser"
-            routerLink="/join">
-           Be a member
-        </a>
+            routerLink="/join">Join</a>
         <button *ngIf="userInjectService.currentUser"
           (click)="startLogOutAjax()">
         Log Out

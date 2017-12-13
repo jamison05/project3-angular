@@ -15,7 +15,7 @@ export class AppComponent  implements OnInit,AfterViewInit {
         private routerThang: Router
       ) { }
       ngAfterViewInit(){
-        // hieloStart();
+        hieloStart();
       }
       ngOnInit() {
           this.userInjectService.getCheckLogin()

@@ -34,15 +34,19 @@ height:10%;
   margin-top:2px;
   width:75%;
   color:white;
+
 /*  background: url(assets/images/water.gif);*/
 }
 
 .nav_a1>a{
   text-align: center;
-  background-color:#167880d6;
+
+  padding-top:2%;
+  /*-color:gray;*/
   color:white;
   border-radius:5px;
   text-decoration:none;
   width:15%;
+
 
 }

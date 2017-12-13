@@ -251,7 +251,7 @@ var settings = {
 			}, options.delay);
 
 	};
-hieloStart = function(){
+//hieloStart = function(){
 	$(function() {
 
 		var	$window 	= $(window),
@@ -285,7 +285,7 @@ hieloStart = function(){
 				.appendTo($body)
 				.panel({
 					delay: 500,
-					hideOnClick: true,
+  				hideOnClick: false,
 					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
@@ -311,7 +311,5 @@ hieloStart = function(){
 			}
 
 	});
-}
-})
-
-(jQuery);
+//}
+})(jQuery);

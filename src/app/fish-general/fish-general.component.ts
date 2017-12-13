@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {  FishGeneralApiService , FishItem } from '../services/fish-general-api.service';
+import { ActivatedRouter, Router } from '@angular/router';
+
 @Component({
   selector: 'app-fish-general',
   templateUrl: './fish-general.component.html',
@@ -8,7 +10,8 @@ import {  FishGeneralApiService , FishItem } from '../services/fish-general-api.
 export class FishGeneralComponent implements OnInit {
 
 
-    constructor(private fishThang: FishGeneralApiService) { }
+    constructor(private fishThang: FishGeneralApiService,
+      private routerThang: Router) { }
     fishes: FishItem[] = [];
 
     ngOnInit() {

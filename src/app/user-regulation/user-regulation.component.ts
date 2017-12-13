@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRouter, Router } from '@angular/router';
 @Component({
   selector: 'app-user-regulation',
   templateUrl: './user-regulation.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserRegulationComponent implements OnInit {
 
-  constructor() { }
+  constructor(  private routerThang: Router) { }
 
   ngOnInit() {
   }

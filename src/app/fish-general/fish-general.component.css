@@ -5,6 +5,9 @@ img {
   max-width: 75%;
 }
 
+body{
+  background-color: grey;
+}
 .image .fit{
   margin-top:10px;
   display:flex;

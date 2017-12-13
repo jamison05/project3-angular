@@ -1,4 +1,12 @@
 <h2> Sign Up </h2>
+<nav id="menu">
+  <ul class="links">
+    <li><a routerLink="/"> Home </a></li>
+    <li><a routerLink="/fish"> Our Fish </a></li>
+    <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
+  </ul>
+</nav>
+
 
 <form (ngSubmit)="startSignupAjax()">
   <label for="fullname-input"> Full Name </label>
