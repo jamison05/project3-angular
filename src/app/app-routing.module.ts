@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'join',       component: UserRegulationComponent },
   { path: 'fish', component: FishGeneralComponent},
   { path: 'displayfish/:id', component:FishDetailsComponent},
+  {path:'displayCommerce',component:FishCommerceComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

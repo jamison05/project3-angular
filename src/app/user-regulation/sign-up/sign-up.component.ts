@@ -12,8 +12,8 @@ export class SignUpComponent implements OnInit {
   theUser = new User();
 
   constructor(
-    private userInjectService: UserApiService,
-    private routerThang: Router
+    public userInjectService: UserApiService,
+    public routerThang: Router
   ) { }
 
   ngOnInit() {

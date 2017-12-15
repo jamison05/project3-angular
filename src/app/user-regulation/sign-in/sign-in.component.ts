@@ -12,8 +12,8 @@ export class SignInComponent implements OnInit {
   theUser = new User();
 
   constructor(
-    private userInjectService: UserApiService,
-    private routerThang: Router
+    public userInjectService: UserApiService,
+    public routerThang: Router
   ) { }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class SignInComponent implements OnInit {
   startLoginAjax() {
       this.userInjectService.postLogin(this.theUser)
         .then(() => {
-            this.routerThang.navigate(['/phones']);
+            this.routerThang.navigate(['/']);
         })
         .catch((err) => {
             alert('Sorry! Something went wrong.');

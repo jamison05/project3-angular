@@ -11,8 +11,8 @@ export class AppComponent  implements OnInit,AfterViewInit {
    title = 'app';
 
      constructor (
-        private userInjectService: UserApiService,
-        private routerThang: Router
+        public userInjectService: UserApiService,
+        public routerThang: Router
       ) { }
       ngAfterViewInit(){
         hieloStart();

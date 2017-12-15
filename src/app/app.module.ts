@@ -19,6 +19,7 @@ import { FishGeneralApiService } from './services/fish-general-api.service';
 import { CommerceApiService } from './services/commerce-api.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { CommerceApiService } from './services/commerce-api.service';
   providers: [
     UserApiService,
     FishGeneralApiService,
-
+    CommerceApiService
   ],
   bootstrap: [AppComponent]
 })

@@ -27,7 +27,7 @@ export class UserApiService {
   constructor(private httpThang: HttpClient) { }
 
   // POST /api/signup
-  postSignup(userInfo: User) {
+      postSignup(userInfo: User) {
       return this.httpThang.post(
           `${environment.backendUrl}/api/signup`,
           userInfo,

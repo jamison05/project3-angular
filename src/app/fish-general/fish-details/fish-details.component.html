@@ -20,21 +20,24 @@
               <p><span class="caption1">(Approximate) Max Size:</span>{{ fishes.maxSize }} inches</p>
               <p><span class="caption1">Tempermant: </span> {{ fishes.tempermant }}</p>
               <p><span class="caption1">Water Preference:</span>  {{ fishes.waterpreference }}</p>
-              <p><li *ngFor="let locationFish of fishes.location">
+              <p><li *ngFor="let locationFish of fishes.locations">
                 <span class="caption1">Naturally Found:</span>{{ locationFish.locations}}
               </li></p>
             </ul>
 
               <button *ngIf="fishes._id"                  (click)="startDeleteAjax()">Delete Fish Item</button>
               <div></div>
-              <a [routerLink]="['/fish']">Go back to list</a>
 
+              <button [routerLink]="['/displayCommerce']">Commerce Fish Item</button> 
+              <div></div>
+              <a [routerLink]="['/fish']">Go back to list</a>
+              <!-- <a [routerLink]="['/displayCommerce']">Go back to commerce</a> -->
           </header>
         </div>
       </div>
     </div>
 
-<app-fish-commerce></app-fish-commerce>
+
 <!--  currentSize: {
             type: Number,
             required: [true, 'Add information on fish.']
