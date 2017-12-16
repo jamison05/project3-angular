@@ -1,8 +1,8 @@
 <h2>
   fish-commerce works!
 </h2>
-<p><span class="caption1"> Cost:</span>  {{ fishcost_transfer.cost }} inches </p>
-<p><span class="caption1">(Approximate) Max Size:</span>{{ fishcost_transfer.availability }} inches</p>
-<p><span class="caption1">Tempermant: </span> {{ fishcost_transfer.captiveBreeding }}</p>
-<p><span class="caption1">Water Preference:</span>  {{ fishcost_transfer.fish }}</p> 
-  <!-- <button *ngIf="fishes._id"                  (click)="startSubmitTransaction()">Activate Purchase</button> -->1
+<p><span class="caption1"> Cost:</span>${{ fishcost_transfer.cost }} </p>
+<p><span class="caption1">Availability</span>{{ fishcost_transfer.availability }}</p>
+<p><span class="caption1">Captive Breeding: </span> {{ fishcost_transfer.captiveBreeding }}</p>
+<p><span class="caption1">Item to Purchase</span>  {{ fishcost_transfer.fish }}</p>
+  <button                 (click)="startSubmitTransaction()">Activate Purchase</button>

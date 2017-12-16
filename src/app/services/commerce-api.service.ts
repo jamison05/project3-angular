@@ -4,15 +4,15 @@ import 'rxjs/add/operator/toPromise';
 import { environment } from '../../environments/environment';
 
 
-//
-// export class fishTransaction {
-//   username:string;
-//   number_ofItems: string;
-//   fish_sales_item: string;
-//   _id: string;
-//   createdAt: string;
-//   updatedAt: string;
-// }
+
+export class fishTransaction {
+  username:string;
+  number_ofItems: string;
+  fish_sales_item: string;
+  _id: string;
+  createdAt: string;
+  updatedAt: string;
+}
 
 export class fishCost1 {
   cost: string;
@@ -24,13 +24,13 @@ export class fishCost1 {
   updatedAt: string;
 }
 
-@Injectable()
+@Injectable() //Injects into the service especially if it //hasClass more than one object exporting.
 export class CommerceApiService {
 
   constructor(private httpThang: HttpClient) { }
-
+transaction: fishTransaction;
   getOneFishCost(oneId: string) {
-      return this.httpThang.get(
+        return this.httpThang.get(
       `${environment.backendUrl}/api/displayfish/${oneId}/commerce`,
       { withCredentials: true }
       ).toPromise();
@@ -39,20 +39,19 @@ export class CommerceApiService {
 
   // Send Transcaction
   //
-  // send_Transaction(transact) {
-  // return //this.httpThang.get(`${environment.backendUrl}/api/displayfish/commerce/trans//action`,
-  //
-  //         // send the cookies even to a different domain
-  //         { withCredentials: true }
-  //       )
-  //       .toPromise()
-  //       .then((apiResult: any) => {
-  //           // update "currentUser" since we are logged in
-  //           this.transact = apiResult;
-  //           // return "apiResult" for the component
-  //           return apiResult;
-  //       });
-  // }
+  send_Transaction(transact:fishTransaction) {
+  return this.httpThang.post(`${environment.backendUrl}/api/displayfish/transaction`,transact,
+          // send the cookies even to a different domain
+        //  { withCredentials: true }
+        )
+        .toPromise()
+        .then((apiResult: any) => {
+            // update "currentUser" since we are logged in
+            this.transaction = apiResult.transact;
+            // return "apiResult" for the component
+            return apiResult;
+        });
+  }
 
 
 }
