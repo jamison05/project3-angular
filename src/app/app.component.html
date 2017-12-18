@@ -10,30 +10,11 @@
       <li><a routerLink="/"> Home </a></li>
       <li><a routerLink="/fish"> Our Fish </a></li>
       <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
-      <li *ngIf="userInjectService.currentUser"><a routerLink="/logout">Logout</a></li>
+      <li *ngIf="!userInjectService.currentUser"><a  routerLink="/login">Already a member </a></li>
+      <li *ngIf="userInjectService.currentUser"><a routerLink="/login">Logout</a></li>
     </ul>
   </nav>
 
-
-<!-- <header class="initial_header">
-
-<div class ="container2_a1">
-<div class = "container1_a1">
-  <nav class="nav_a1">
-        <a routerLink="/"> Home </a>
-        <a routerLink="/fish"> Our Fish </a>
-        <a *ngIf="!userInjectService.currentUser"
-            routerLink="/join">Join</a>
-            <p *ngIf="userInjectService.currentUser">
-              Hello, <b>{{ userInjectService.currentUser.username }}</b>.
-            </p>
-  </nav>
-
-
-
-</div>
-</div>
-</header> -->
 
 
 

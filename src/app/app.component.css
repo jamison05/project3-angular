@@ -1,7 +1,7 @@
-.background-menu{
+/*.background-menu{
   background-color:rgba(21, 28, 75, 0.78)
 }
-
+*/
 
 /*.container1_a1{
 
@@ -21,7 +21,7 @@
 display: flex;
 justify-content: center;
 background-color:#167880d6;
-border-radius: 5px;
+border-radius: 5px; 
 border-color:#013e527a;
 height:10%;
 

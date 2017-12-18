@@ -29,7 +29,7 @@ export class AppComponent  implements OnInit,AfterViewInit {
       }
 
       startLogOutAjax() {
-          this.userInjectService.logout()
+          this.userInjectService.delete()
             .then(() => {
                 this.routerThang.navigate(['/']);
             })

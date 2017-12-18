@@ -16,7 +16,7 @@ export class User {
 
   address:  string;
   // assigned by the database
-  _id:      string;
+        _id: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -62,7 +62,7 @@ export class UserApiService {
         });
   }
 
-    logout() {
+    delete(){
          return this.httpThang.delete(
            `${environment.backendUrl}/api/logout`,
 

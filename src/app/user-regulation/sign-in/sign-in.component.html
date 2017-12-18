@@ -1,13 +1,14 @@
-<h2> Log In </h2>
-<nav id="menu">
-  <ul class="links">
-    <li><a routerLink="/"> Home </a></li>
-    <li><a routerLink="/fish"> Our Fish </a></li>
-    <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
-  </ul>
-</nav>
+<section id="One" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+
+      <h2>Welcome,login to go into the site. </h2>
+    </header>
+  </div>
+</section>
 
 
+<div class = "form_containter">
 <form (ngSubmit)="startLoginAjax()">
   <label for="username-input"> Username </label>
   <input  id="username-input" type="text" placeholder="eg. John Jones"
@@ -21,3 +22,5 @@
 
   <button> Log In </button>
 </form>
+      <button (click)="logout_f()">Logout</button>
+</div>

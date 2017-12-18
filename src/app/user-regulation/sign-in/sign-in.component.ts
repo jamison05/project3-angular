@@ -29,6 +29,17 @@ export class SignInComponent implements OnInit {
             console.log('Log in error');
             console.log(err);
         });
-  }
+      }
+logout_f(){
+  this.userInjectService.delete()
+    .then(() => {
+        this.routerThang.navigate(['/']);
+    })
+    .catch((err) => {
+        alert('Sorry! Something went wrong.');
+        console.log('Log in error');
+        console.log(err);
+    });
 
+}
 }

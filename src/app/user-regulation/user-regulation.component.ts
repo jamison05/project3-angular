@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class UserRegulationComponent implements OnInit {
 
-  constructor(  private routerThang: Router) { }
+  constructor(  public routerThang: Router) { }
 
   ngOnInit() {
   }
