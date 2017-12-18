@@ -9,7 +9,7 @@ a {
 
 #form {
   margin: 30px auto;
-  width: 380px;
+  width: 30%;
 }
 
 #form label {
@@ -45,10 +45,13 @@ a {
   width: 100%;
 }
 .form_containter{
+  padding-top:3%;
+  margin-top:3%;
   display:flex;
   justify-content: center;
-  width:100%;
-  background-color:rgba(166, 188, 238, 0.14)
+  width:30%;
+  background-color:rgba(166, 188, 238, 0.1);
+  border-radius:10px;
 
 }
 #form button:hover {
@@ -64,4 +67,16 @@ a {
   margin: 20px auto;
   padding: 20px;
   width: 100%;
+}
+button{
+  margin-left:12%;
+  border-style:solid;
+  border-color:rgba(14, 156, 181, 0.05);
+  border-width:5px;
+  text-shadow: grey;
+}
+.form_container0{
+  display:flex;
+  justify-content: center;
+
 }

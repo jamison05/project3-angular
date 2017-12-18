@@ -2,6 +2,7 @@
 
   text-align:left;
   text-shadow: grey;
+  margin-left:7%;
 
 }
 .caption1{
@@ -15,7 +16,8 @@
 img {
   margin-top:5%;
   padding-top:5%;
-  margin:15%;
+  margin-left:15%;
+  margin-bottom:5%;
   max-width: 85%;
 }
 
@@ -43,4 +45,11 @@ app-trivia{
 .trivia-container{
   height:100%;
   margin-top:8%;
+}
+button{
+
+  border-style:solid;
+  border-color:rgba(14, 156, 181, 0.05);
+  border-width:5px;
+  text-shadow: grey;
 }

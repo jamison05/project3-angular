@@ -1,8 +1,8 @@
 
   <h2>{{listOftrivia[randNumberindex].question}}</h2>
-  <div *ngFor="let oneanswer of listOftrivia[randNumberindex].answer">
+  <div *ngFor="let oneanswer of listOftrivia[randNumberindex].answer, let iter =index">
       <div class="answers">
-      <p>{{oneanswer}}</p>
+        <p>{{iter+1}}.  {{oneanswer}}</p>
       </div>
     </div>
   <div *ngIf="isSelected" class="solution">
