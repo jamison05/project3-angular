@@ -7,7 +7,8 @@ import { environment } from '../../environments/environment';
 
 export class fishTransaction {
   username:string;
-  number_ofItems: string;
+  number_ofItems: number;
+  cost_per_item:number;
   fish_sales_item: string;
   _id: string;
   createdAt: string;
@@ -15,7 +16,7 @@ export class fishTransaction {
 }
 
 export class fishCost1 {
-  cost: string;
+  cost: number;
   availability: string;
   captiveBreeding: string;
   fish: string;
@@ -28,7 +29,7 @@ export class fishCost1 {
 export class CommerceApiService {
 
   constructor(private httpThang: HttpClient) { }
-transaction: fishTransaction;
+  transaction: fishTransaction;
   getOneFishCost(oneId: string) {
         return this.httpThang.get(
       `${environment.backendUrl}/api/displayfish/${oneId}/commerce`,

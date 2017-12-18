@@ -17,6 +17,7 @@ import { FishCommerceComponent } from './fish-general/fish-commerce/fish-commerc
 import { UserApiService } from './services/user-api.service';
 import { FishGeneralApiService } from './services/fish-general-api.service';
 import { CommerceApiService } from './services/commerce-api.service';
+import { TriviaComponent } from './trivia/trivia.component';
 
 
 
@@ -30,7 +31,8 @@ import { CommerceApiService } from './services/commerce-api.service';
     FishGeneralComponent,
     FishDetailsComponent,
     FishCategoryComponent,
-    FishCommerceComponent
+    FishCommerceComponent,
+    TriviaComponent
   ],
   imports: [
     BrowserModule,

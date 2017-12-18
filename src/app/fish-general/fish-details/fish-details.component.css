@@ -10,6 +10,37 @@
   font-display: block;
   color:black;
 }
-p{
+
+
+img {
+  margin-top:5%;
+  padding-top:5%;
+  margin:15%;
+  max-width: 85%;
+}
+
+body{
+  background-color: grey;
+}
+.image .fit{
+  margin-top:10px;
+  display:flex;
+  justify-content: center;
+}
+.align-center p{
   color:rgb(10, 13, 60);
+}
+.Special-p>p{
+  color:white;
+}
+
+app-trivia{
+  margin-top:20%;
+  height:100%;
+  margin-left:10%;
+  width:50%;
+}
+.trivia-container{
+  height:100%;
+  margin-top:8%;
 }

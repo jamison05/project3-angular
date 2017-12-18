@@ -51,7 +51,8 @@ startSubmitTransaction() {
     }
 
     this.fish_transaction._id= this.fishcost_transfer.fish;
-    this.fish_transaction.number_ofItems="1";
+    this.fish_transaction.number_ofItems=1;
+    this.fish_transaction.cost_per_item=this.fishcost_transfer.cost;
     this.fish_transaction.username=this.userInjectService.currentUser.username;
     this.commerceInjector.send_Transaction(this.fish_transaction).then(() => {
           // redirect to the general fish
@@ -80,6 +81,6 @@ startSubmitTransaction() {
     //   fish: string;
     //   _id: string;
     //   createdAt: string;
-      //updatedAt: string;
+    //updatedAt: string;
  // StartTransaction
 }

@@ -1,14 +1,16 @@
-
+<router-outlet></router-outlet>
+<div class= "background-menu">
 <header id="header" class="alt">
     <a href="#menu">Menu</a>
 </header>
-
+</div>
 
   <nav id="menu">
     <ul class="links">
       <li><a routerLink="/"> Home </a></li>
       <li><a routerLink="/fish"> Our Fish </a></li>
       <li *ngIf="!userInjectService.currentUser"><a  routerLink="/join">Be a member </a></li>
+      <li *ngIf="userInjectService.currentUser"><a routerLink="/logout">Logout</a></li>
     </ul>
   </nav>
 
@@ -36,7 +38,3 @@
 
 
 <router-outlet></router-outlet>
-<button *ngIf="userInjectService.currentUser"
-  (click)="startLogOutAjax()">
-Log Out
-</button>

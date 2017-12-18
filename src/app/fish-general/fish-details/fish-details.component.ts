@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {  FishGeneralApiService , FishItem } from '../../services/fish-general-api.service';
+
+import { UserApiService, User } from '../../services/user-api.service';
 @Component({
   selector: 'app-fish-details',
   templateUrl: './fish-details.component.html',
@@ -8,10 +10,12 @@ import {  FishGeneralApiService , FishItem } from '../../services/fish-general-a
 })
 export class FishDetailsComponent implements OnInit {
   fishes= new FishItem();
+  user_admin1 = new User();
   constructor(
-        private activatedInjector: ActivatedRoute,
-        private fishThang: FishGeneralApiService,
-        private routerThang: Router
+        public activatedInjector: ActivatedRoute,
+        public fishThang: FishGeneralApiService,
+        public routerThang: Router,
+        public userInjectService:UserApiService
         ) { }
 
     ngOnInit() {
@@ -42,10 +46,11 @@ startDeleteAjax() {
     if (!confirm('Are you sure?')){
         return;
     }
-
+    console.log(this.user_admin1);
+if (this.userInjectService.currentUser.role==="admin"){
     this.fishThang.deleteOneFish(this.fishes._id)
       .then(() => {
-          // redirect with the Angular router to list of phones
+          // redirect with the Angular router to list of //phones
           this.routerThang.navigate(['/fish']);
       })
       .catch((err) =>{
@@ -53,8 +58,9 @@ startDeleteAjax() {
           console.log("Phone Delete Error");
           console.log(err);
       });
-    }
- // startDeleteAjax()
+}else{
+  alert("Sorry, you donot have permission to delete this item.");
 
-
+}
+}
 }

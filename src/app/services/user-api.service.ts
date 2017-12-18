@@ -10,10 +10,13 @@ export class User {
 
   // sign up & log in forms
   username: string;
+  email: string;
   password: string;
+  role:     string;
 
+  address:  string;
   // assigned by the database
-  _id: string;
+  _id:      string;
   createdAt: string;
   updatedAt: string;
 }
@@ -27,7 +30,7 @@ export class UserApiService {
   constructor(private httpThang: HttpClient) { }
 
   // POST /api/signup
-      postSignup(userInfo: User) {
+    postSignup(userInfo: User) {
       return this.httpThang.post(
           `${environment.backendUrl}/api/signup`,
           userInfo,

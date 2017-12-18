@@ -18,11 +18,21 @@
   <input  id="username-input" type="text" placeholder="e.g. Kev"
       [(ngModel)]="theUser.username" name="usernameInput" />
   <br />
+  <label for="email-input"> Email </label>
+  <input  id="email-input" type="text" placeholder="eg.    fishaquarist@fish.com"
+      [(ngModel)]="theUser.email" name="emailInput" />
+  <br />
 
   <label for="password-input"> Password </label>
   <input  id="password-input" type="password" placeholder="e.g. *****"
       [(ngModel)]="theUser.password" name="passwordInput" />
   <br />
+
+  <label for="address-input"> Shipping Address </label>
+  <input  id="address-input" type="text" placeholder="eg. 123 Fist Street, Miami, FL"
+      [(ngModel)]="theUser.address" name="addressInput" />
+  <br />
+
 
   <button> Sign Up </button>
 </form>

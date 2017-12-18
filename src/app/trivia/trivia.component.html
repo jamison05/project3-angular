@@ -1,0 +1,11 @@
+
+  <h2>{{listOftrivia[randNumberindex].question}}</h2>
+  <div *ngFor="let oneanswer of listOftrivia[randNumberindex].answer">
+      <div class="answers">
+      <p>{{oneanswer}}</p>
+      </div>
+    </div>
+  <div *ngIf="isSelected" class="solution">
+    <p>{{listOftrivia[randNumberindex].solution}}</p>
+  </div>
+    <button (click)="display_trivia()">Check Solution</button>

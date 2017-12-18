@@ -1,8 +1,20 @@
-<h2>
-  fish-commerce works!
-</h2>
-<p><span class="caption1"> Cost:</span>${{ fishcost_transfer.cost }} </p>
-<p><span class="caption1">Availability</span>{{ fishcost_transfer.availability }}</p>
-<p><span class="caption1">Captive Breeding: </span> {{ fishcost_transfer.captiveBreeding }}</p>
-<p><span class="caption1">Item to Purchase</span>  {{ fishcost_transfer.fish }}</p>
-  <button                 (click)="startSubmitTransaction()">Activate Purchase</button>
+<section id="One" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <div class ="Special-p"><p>Enjoy your fish very soon. </p></div>
+      <h2>Buy your fish</h2>
+    </header>
+  </div>
+</section>
+<div class = "Buy_fish_options">
+  <div class = "border1">
+  <div class = "buycontainer2">
+    <p><span class="caption1"> Cost:</span>  ${{ fishcost_transfer.cost }} </p>
+    <p><span class="caption1">Availability</span>  {{ fishcost_transfer.availability }}</p>
+    <p><span class="caption1">Captive Breeding: </span>  {{ fishcost_transfer.captiveBreeding }}</p>
+    <p><span class="caption1">Item to Purchase:</span>  {{ fishcost_transfer.fish }}</p>
+      <button                 (click)="startSubmitTransaction()">Activate Purchase</button>
+
+  </div>
+  </div>
+</div>

@@ -1693,6 +1693,8 @@
 		}
 
 	h2 {
+		display:flex;
+		justify-content: center;
 		font-size: 1.75rem;
 	}
 

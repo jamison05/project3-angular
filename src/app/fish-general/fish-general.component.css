@@ -13,6 +13,23 @@ body{
   display:flex;
   justify-content: center;
 }
-p{
+.align-center>p{
   color:rgb(10, 13, 60);
+}
+.wrapper .style2{
+width:100%;
+display:flex;
+justify-content: center;
+text-align: center;
+}
+
+.heading-container5{
+
+  dislay:flex;
+  justify-content: center;
+  width:25%;
+  border-color:rgba(106, 144, 201, 0.31);
+  background-color:
+  rgba(52, 185, 214, 0.59);
+  border-radius:10px;
 }
