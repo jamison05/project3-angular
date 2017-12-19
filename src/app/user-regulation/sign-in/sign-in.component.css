@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color:rgba(126, 141, 148, 0.37);
 }
 
 #form {
@@ -13,7 +13,7 @@ a {
 }
 
 #form label {
-  color: rgb(190, 244, 251);
+  color:rgba(126, 141, 148, 0.37);
   display: inline-block;
   margin-bottom: 10px;
   text-align: center;
@@ -25,16 +25,16 @@ a {
   box-sizing: border-box;
   font-size: 14px;
   outline: 0;
-  padding: 3px;
+  padding: 5px;
   width: 100%;
-  border-color:rgba(2, 207, 244, 0.44)
+  border-color:rgba(12, 222, 222, 0.32);
 }
 
 #form button {
-  background: #43a3e6;
+  background: blue;
   border: 3px solid rgba(2, 207, 244, 0.44);
   border-radius: 4px;
-  color: #fff;
+  color: blue;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -50,13 +50,13 @@ a {
   display:flex;
   justify-content: center;
   width:30%;
-  background-color:rgba(166, 188, 238, 0.1);
+  background-color:rgba(126, 141, 148, 0.37);
   border-radius:10px;
 
 }
 #form button:hover {
-  background: #fff;
-  color: rgb(8, 6, 105);
+  background: green;
+  color: rgb(8, 6, 1);
   transition: .3s ease background;
 }
 

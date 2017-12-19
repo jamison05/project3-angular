@@ -11,7 +11,17 @@
   font-display: block;
   color:black;
 }
+.color-image{
+  width:100%;
+  height:100%;
+  background-image: "./../assets/images/slide04.jpg"  alt="image not found";
 
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-bottom-width:10px;
+  boder-stye:solid;
+  border-color:grey;
+}
 
 img {
   margin-top:5%;
@@ -29,6 +39,12 @@ body{
   display:flex;
   justify-content: center;
 }
+.alingn-center{
+  border-bottom-width:10px;
+  boder-stye:solid;
+  border-color:grey;
+
+}
 .align-center p{
   color:rgb(10, 13, 60);
 }
@@ -41,15 +57,29 @@ app-trivia{
   height:100%;
   margin-left:10%;
   width:50%;
+
 }
 .trivia-container{
   height:100%;
   margin-top:8%;
+  border-style:solid;
+  border-color:rgba(14, 156, 181, 0.05);
+  border-width:5px;
+  text-shadow: grey;
+  padding-bottom:2%;
 }
 button{
+  margin-bottom:10px;
 
   border-style:solid;
   border-color:rgba(14, 156, 181, 0.05);
   border-width:5px;
   text-shadow: grey;
+}
+.color-image{
+background-image: "../assets/images/slide03.jpg"  alt="image not found";
+
+background-repeat:no-repeat;
+background-size: cover;
+
 }

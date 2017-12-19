@@ -33,7 +33,7 @@ export class CommerceApiService {
   getOneFishCost(oneId: string) {
         return this.httpThang.get(
       `${environment.backendUrl}/api/displayfish/${oneId}/commerce`,
-      { withCredentials: true }
+      //{ withCredentials: true }
       ).toPromise();
   }
 
@@ -43,7 +43,7 @@ export class CommerceApiService {
   send_Transaction(transact:fishTransaction) {
   return this.httpThang.post(`${environment.backendUrl}/api/displayfish/transaction`,transact,
           // send the cookies even to a different domain
-        //  { withCredentials: true }
+        //{ withCredentials: true }
         )
         .toPromise()
         .then((apiResult: any) => {
