@@ -61,7 +61,7 @@ a {
   transition: .3s ease background;
 }
 #fullNameInput, #passwordInput,#emailInput, #addressInput,#usernameInput{
-background-color:;
+background-color:white;
 
 }
 .error-message {
@@ -75,7 +75,7 @@ background-color:;
 button{
   margin-left:12%;
   border-style:solid;
-  border-color:rgba(14, 156, 181, 0.05);
+  border-color:rgba(14, 156, 181, 0.25);
   border-width:5px;
   text-shadow: grey;
 }
