@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -28,6 +28,8 @@ a {
   padding: 5px;
   width: 100%;
   border-color:rgba(215, 245, 246, 0.51);
+
+
 }
 
 #form button {
@@ -71,9 +73,14 @@ a {
 button{
   margin-left:12%;
   border-style:solid;
-  border-color:rgba(14, 156, 181, 0.05);
+  border-color:rgba(14, 156, 181, 0.025);
   border-width:5px;
   text-shadow: grey;
+
+  border-radius: 4px;
+  border-color:rgba(12, 222, 222, 0.05);
+  padding:2% 3% 2% 2%;
+  margin: 2% 2% 2% 2%;
 }
 .form_container0{
   display:flex;

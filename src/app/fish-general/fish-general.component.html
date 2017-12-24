@@ -36,7 +36,9 @@
                   </p>
               </header>
               <footer class="align-center">
-                  <a [routerLink]="['/displayfish', oneFish._id]"> See Details </a>
+                  <div *ngIf="userInjectService.currentUser">
+                    <a [routerLink]="['/displayfish', oneFish._id]"> See Details </a>
+                  </div>
               </footer>
             </div>
           </div>

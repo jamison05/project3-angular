@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {  FishGeneralApiService , FishItem } from '../services/fish-general-api.service';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import { UserApiService, User } from '../services/user-api.service';
 @Component({
   selector: 'app-fish-general',
   templateUrl: './fish-general.component.html',
@@ -11,14 +11,14 @@ export class FishGeneralComponent implements OnInit {
 
 
     constructor(private fishThang: FishGeneralApiService,
-      private routerThang: Router) { }
+      private routerThang: Router,
+      public userInjectService:UserApiService
+) { }
     fishes: FishItem[] = [];
 
     ngOnInit() {
         this.fishThang.getFish()
           .then((fishResults: FishItem[]) => {
-              // THE MAGIC HAPPENS HERE
-              // (assign API results to component property)
               this.fishes = fishResults;
           })
           .catch((err) => {
